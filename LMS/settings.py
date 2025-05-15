@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     'enrollments.apps.EnrollmentsConfig',
     'users.apps.UsersConfig',
     'courses.apps.CoursesConfig',
-    'Certificates.apps.CertificatesConfig',
+    'certificates.apps.CertificatesConfig',
     'api.apps.ApiConfig',
     'analytics.apps.AnalyticsConfig',
 
