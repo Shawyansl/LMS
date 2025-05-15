@@ -1,0 +1,8 @@
+<h2>جزئیات دوره: {{ course.title }}</h2>
+<p>{{ course.description }}</p>
+<p>مدرس: {{ course.instructor }}</p>
+<p>وضعیت: {% if course.is_active %}فعال{% else %}غیرفعال{% endif %}</p>
+
+<a href="{% url 'courses:course_update' course.id %}">ویرایش</a>
+<a href="{% url 'courses:course_delete' course.id %}">حذف</a>
+<a href="{% url 'courses:course_list' %}">بازگشت به لیست</a>

@@ -1,0 +1,7 @@
+<h2>{% if object %}ویرایش{% else %}ایجاد{% endif %} دوره</h2>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">ذخیره</button>
+</form>
+<a href="{% url 'courses:course_list' %}">بازگشت به لیست</a>

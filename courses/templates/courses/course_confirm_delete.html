@@ -1,0 +1,6 @@
+<h2>آیا مطمئن هستید که می‌خواهید دوره "{{ object.title }}" را حذف کنید؟</h2>
+<form method="post">
+    {% csrf_token %}
+    <button type="submit">بله، حذف شود</button>
+    <a href="{% url 'courses:course_list' %}">لغو</a>
+</form>
